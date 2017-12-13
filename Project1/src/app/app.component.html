@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div *ngFor='let name of names'>{{name}}</div>
+
+
+<button (click)="displayData()">Click</button>
+
+
+<h1>{{title}}</h1>
+<h2>{{name}}</h2>
+
+
+
+
+<app-child1 [mehul]="name" (onEventChange)="receiveMessage($event)"></app-child1>
